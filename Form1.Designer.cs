@@ -197,7 +197,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(729, 450);
             this.Controls.Add(this.splitContainer1);
-            //this.Name = "Form1";
+            this.Name = "Form1";
             this.Text = "Площадь фигур";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

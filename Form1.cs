@@ -38,7 +38,7 @@ namespace ShapesArea
                         name: shape.Key,
                         formulaLogic: FormulaLogic.logicDictionary[catalog.Key][shape.Key],
                         formula: shape.Value["Формула"].ToObject<String>(),
-                        parametersName: shape.Value["Условные обозначения"].ToObject<Dictionary<String, String>>().Select(i => i.Value).ToList<String>()
+                        parametersName: shape.Value["Условные обозначения"].ToObject<Dictionary<String, String>>().Select(i => $"{i.Key} ({i.Value})").ToList<String>()
                         );
                 }
                 treeView.Nodes.Add(node);
